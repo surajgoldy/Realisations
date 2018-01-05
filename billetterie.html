@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<title>Billetterie - Japan Stories</title>
+	</head>
+	<body>
+        <header id="entete">
+            <a href="accueil.html" class="logo" title="Aller à l'accueil">
+                <h2><span style="color:#cc3300;">Japan Stories</span></h2><br />
+                           </a>
+        </header>
+        
+        <nav id="menu">
+            <ul>
+			<li><a href="accueil.html" title="Accueil " >Accueil</a></li>
+
+                <li><a href="decouverte.html" title="Découverte du Japon ">Découverte</a></li>
+                
+			 <li><a href="actualites.html" title="Quelques news.. ">Actualit&eacute;s</a></li>
+
+                <li><a href="forum.html" title="Forum ">Forum       
+
+</a></li>
+                <li><a href="billetterie.html" title="Billetterie et Réservation en ligne ">Billetterie et Réservations</a></li>
+
+			
+			  <li><a href="infos.html" title="Infos " id ="Infos">Infos / MCJP </a></li>
+	
+				
+                   
+            </ul>
+        </nav>
+        
+		<div id="contenu">
+			
+            <aside id="navigation">
+				
+
+				
+				<h3>Calendrier</h3>
+                    <div class="mois">
+                        <button class="moisPrec" title="Mois précédent">&laquo;</button>Janvier 2015<button class="moisSuiv" title="Mois suivant">&raquo;</button>
+                    </div>
+					<table class="calendrier">
+						<tr>
+							<th id="lundi">L</th> <th>M</th> <th>M</th> <th>J</th> <th>V</th> <th>S</th> <th>D</th>
+						</tr>
+						<tr>
+							<td class="autreMois-lundi">30</td> <td class="autreMois">31</td> <td>1</td> <td>2</td> <td>3</td> <td>4</td> <td>5</td>
+						</tr>
+						<tr>
+							<td class="lundi">6</td> <td>7</td> <td>8</td> <td>9</td> <td>10</td> <td>11</td> <td>12</td>
+						</tr>
+						<tr>
+							<td class="lundi">13</td> <td>14</td> <td>15</td> <td>16</td> <td>17</td> <td>18</td> <td>19</td>
+						</tr>
+						<tr>
+							<td class="lundi">20</td> <td>21</td> <td>22</td> <td>23</td> <td>24</td> <td>25</td> <td>26</td>
+						</tr>
+						<tr>
+							<td class="lundi">27</td> <td>28</td> <td>29</td> <td>30</td> <td>31</td> <td class="autreMois">1</td> <td class="autreMois">2</td>
+						</tr>
+					</table>
+                <h3>Evénements à venir</h3>
+					<p class="evenement">
+                        <span class="dateEvenement">25 janvier &bull;</span> <i>Rencontre avec Nakamura</i><br />
+                       <span style="font-size:12px;">  Présentation du dernier Tome de WU (Réservations dans la rubrique "Billeterie et Réservations")</span>
+                    </p>
+
+					<p class="evenement">
+                        <span class="dateEvenement">27 Janvier &bull;</span> <i>Origami</i><br />
+                        <span style="font-size:12px;"> Cours pour les 6 - 12 ans (Inscription au cours dans la rubrique "Billeterie et Réservations")</span>
+                    </p>
+                    <p class="evenement">
+                        <span class="dateEvenement">3 F&eacute;vrier &bull;</span> <i>Spectacle des Wasahehe</i><br />
+                          <span style="font-size:12px;">De jeunes apprenti ninjas vont nous montrer l'art de manier des armes traditionelles.(Réservations dans la rubrique "Billeterie et Réservations")</span>
+
+				 </p>
+
+				
+ 					<p class="evenement">
+                        <span class="dateEvenement">9 F&eacute;vrier &bull;</span> <i>Rencontre avec T.Leung</i><br />
+                        <span style="font-size:12px;"> Il viendra nous parler de sa derni&egrave;re r&eacute;alisation : le film Tokyo Drift .(Réservations dans la rubrique "Billeterie et Réservations")</span>
+
+
+                    </p>
+
+
+				<span class="reseaux">
+
+				<button id ="fb">.</button>
+				<button id ="t">.</button>
+				<button id ="i">.</button>
+				<button id ="yt">.</button>
+
+				</span>
+
+				
+			
+					
+				
+
+                   			</aside>
+                        
+            
+			<div id="principal">
+                <h2>R&eacute;server</h2>
+                <p>
+                    Effectuez votre r&eacute;servation sur notre site gr&acirc;ce au formulaire ci-dessous, ou bien <a href="infos.html#numtel" title="Num&eacute;ro de t&eacute;l&eacute;phone">appelez-nous</a>.
+                </p>
+                <form method="post" action="reservation-valide.html" id="formulaire-reservation" class="formulaire">
+                    <input type="reset" value="Tout effacer" />
+                    <label for="reservation-nom">Nom</label><br />
+                    <input type="text" id="reservation-nom" placeholder="Nom" onfocus="this.style.border='1px solid #79BCE5'" onblur="this.style.border='1px solid #AAA'" />
+                    <label for="reservation-prenom">Pr&eacute;nom</label><br />
+                    <input type="text" id="reservation-prenom" placeholder="Pr&eacute;nom" onfocus="this.style.border='1px solid #79BCE5'" onblur="this.style.border='1px solid #AAA'" />
+                    <label for="reservation-date-jour">Date de la r&eacute;servation</label><br />
+                    <table>
+                        <tr>
+                            <td>
+                                <select id="reservation-date-jour" size="10" title="Jour" onfocus="this.style.border='1px solid #79BCE5'" onblur="this.style.border='1px solid #AAA'">
+                                    <option disabled="disabled">Jour</option>
+                                    <option value="date_jour_1">1</option>
+                                    <option value="date_jour_2">2</option>
+                                    <option value="date_jour_3">3</option>
+                                    <option value="date_jour_4">4</option>
+                                    <option value="date_jour_5">5</option>
+                                    <option value="date_jour_6">6</option>
+                                    <option value="date_jour_7">7</option>
+                                    <option value="date_jour_8">8</option>
+                                    <option value="date_jour_9">9</option>
+                                    <option value="date_jour_10">10</option>
+                                    <option value="date_jour_11">11</option>
+                                    <option value="date_jour_12">12</option>
+                                    <option value="date_jour_13">13</option>
+                                    <option value="date_jour_14">14</option>
+                                    <option value="date_jour_15">15</option>
+                                    <option value="date_jour_16">16</option>
+                                    <option value="date_jour_17">17</option>
+                                    <option value="date_jour_18">18</option>
+                                    <option value="date_jour_19">19</option>
+                                    <option value="date_jour_20">20</option>
+                                    <option value="date_jour_21">21</option>
+                                    <option value="date_jour_22">22</option>
+                                    <option value="date_jour_23">23</option>
+                                    <option value="date_jour_24">24</option>
+                                    <option value="date_jour_25">25</option>
+                                    <option value="date_jour_26">26</option>
+                                    <option value="date_jour_27">27</option>
+                                    <option value="date_jour_28">28</option>
+                                    <option value="date_jour_29">29</option>
+                                    <option value="date_jour_30">30</option>
+                                    <option value="date_jour_31">31</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select id="reservation-date-mois" size="10" title="Mois" onfocus="this.style.border='1px solid #79BCE5'" onblur="this.style.border='1px solid #AAA'">
+                                    <option disabled="disabled">Mois</option>
+                                    <option value="date_mois_jan">Janvier</option>
+                                    <option value="date_mois_fev">Fevrier</option>
+                                    <option value="date_mois_mars">Mars</option>
+                                    <option value="date_mois_avr">Avril</option>
+                                    <option value="date_mois_mai">Mai</option>
+                                    <option value="date_mois_juin">Juin</option>
+                                    <option value="date_mois_juill">Juillet</option>
+                                    <option value="date_mois_aout">Ao&ucirc;t</option>
+                                    <option value="date_mois_sept">Septembre</option>
+                                    <option value="date_mois_octo">Octobre</option>
+                                    <option value="date_mois_nov">Novembre</option>
+                                    <option value="date_mois_dec">D&eacute;cembre</option>
+                                </select>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                    </table>
+                    <label for="reservation-nbpersonnes">Nombre de personnes</label><br />
+                    <input type="number" id="reservation-nbpersonnes" placeholder="1 � 15" min="1" max="15" value="1" onfocus="this.style.border='1px solid #79BCE5'" onblur="this.style.border='1px solid #AAA'" />
+                    <label for="reservation-mail">Mail</label><br />
+                    <input type="text" id="reservation-mail" placeholder="Adresse mail" onfocus="this.style.border='1px solid #79BCE5'" onblur="this.style.border='1px solid #AAA'" />
+                    <label for="reservation-telephone">T&eacute;l&eacute;phone</label><br />
+                    <input type="text" id="reservation-telephone" placeholder="Num&eacute;ro de t&eacute;l&eacute;phone" maxlength="10" onfocus="this.style.border='1px solid #79BCE5'" onblur="this.style.border='1px solid #AAA'" />
+                    <label for="reservation-typereservation">Ev&eacute;nement</label><br />
+                    <select id="reservation-typereservation" size="4" title="Type de reservation" onfocus="this.style.border='1px solid #79BCE5'" onblur="this.style.border='1px solid #AAA'">
+                        <option value="reservation-rencontre">Rencontre avec Nakamura</option>
+                        <option value="reservation-origami">Cours Origami </option>
+
+				   <option value="reservation-origami">Spectacle des Wasahehe </option>
+
+
+				   <option value="reservation-origami">Rencontre avec T.Leung </option>
+
+                        <option value="reservation-japanexpo">Japan Expo</option>
+                        <option value="reservation-autre">Autre</option>
+                    </select>
+                    <span class="center"><input type="submit" value="Envoyer" /></span>
+                </form>
+			</div>
+            
+		</div>
+
+		<footer id="bas-de-page">
+            ©2015  Aiko Watanabe, Maison de la Culture du Japon, 101 bis, Quai Branly, 75015| <a href="javascript:alert('Ce site a été réalisé par Suraj VAINGONCAR , Frédéric ROUVIER, Islam SAADI et Yassine EL BAHRAOUI');" title="Mentions légales">Mentions légales</a>
+        </footer>
+	</body>
+</html>
+
+
